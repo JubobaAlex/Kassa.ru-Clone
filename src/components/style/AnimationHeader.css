@@ -1,0 +1,9 @@
+@keyframes header {
+    0% {
+        color: white;   
+    }
+
+    100% {
+        color: #727171;
+    }
+}
