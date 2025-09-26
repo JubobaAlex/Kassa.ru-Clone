@@ -4,8 +4,7 @@ import { Route, Routes } from 'react-router'
 import Home from './pages/Home'
 import Cinema from './pages/Сinema'
 import './App.css'
-
-
+import List from './pages/List'
 function App() {
   return (
     <div>
@@ -16,6 +15,7 @@ function App() {
         <Routes>
           <Route index path='/' element={<Home />}/>
           <Route path='/cinemas' element={<Cinema />} />
+          <Route path='/list' element={<List />} />
         </Routes>
       </BrowserRouter>
     </div>

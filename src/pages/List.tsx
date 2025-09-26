@@ -1,8 +1,8 @@
 import Info from "../components/Info"
-export default function Home() {
+export default function List() {
     return (
         <div>
-           <Info /> 
+            <Info />
         </div>
     )
 }

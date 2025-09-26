@@ -1,0 +1,10 @@
+.navigation {
+    display: flex;
+    padding: 1em;
+    font-size: .8em;
+    gap: 15px;
+}
+
+.navigation a {
+    color: #333;
+}
