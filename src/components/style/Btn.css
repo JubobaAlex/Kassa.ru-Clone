@@ -1,0 +1,15 @@
+.btn {
+    height: 50px;
+    width: 150px;
+    background-image: linear-gradient(90deg,#f9d900,#ff9 51%,#f9d900);
+    border: 1px solid #f7d800;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #5a500e;
+}
+
+.btn-div {
+    display: flex;
+    justify-content: center;
+    
+}

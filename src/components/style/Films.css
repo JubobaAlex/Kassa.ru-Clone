@@ -1,0 +1,82 @@
+.films-container {
+  padding: 20px;
+}
+.movie-card-horizontal {
+  width: 200px; 
+  flex-shrink: 0; 
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+
+
+.films-container h2 {
+  margin-bottom: 20px;
+}
+
+.movies-horizontal-list {
+  justify-content: center;
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+
+  padding-bottom: 10px;
+}
+
+.movie-card-horizontal {
+  min-width: 200px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.movie-poster {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.movie-info {
+  padding: 12px;
+}
+
+.movie-title {
+  font-size: 16px;
+  margin: 0 0 5px 0;
+  font-weight: bold;
+}
+
+.movie-original-title {
+  font-size: 12px;
+  color: #666;
+  margin: 0 0 10px 0;
+  font-style: italic;
+}
+
+.movie-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.age-rating {
+  background: #f0f0f0;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.duration {
+  font-size: 12px;
+  color: #666;
+}
+
+.movie-genres {
+  font-size: 12px;
+  color: #666;
+  margin: 0;
+}

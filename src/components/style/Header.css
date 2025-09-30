@@ -47,3 +47,7 @@ header a {
 .nav-silka a:hover {
     color: white;
 }
+
+.p-header {
+    font-size: 15px;
+}
