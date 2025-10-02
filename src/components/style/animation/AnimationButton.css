@@ -1,0 +1,10 @@
+@keyframes btn {
+    0% {
+        background-size: 200% auto;
+        background-position: left center;
+    }
+    100% {
+        background-size:  200% auto;
+         background-position: right center;
+    }
+}

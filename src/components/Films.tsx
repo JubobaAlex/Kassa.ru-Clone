@@ -1,6 +1,6 @@
 import axios from "axios"
 import { useEffect, useState } from "react"
-import './style/Films.css'
+import './style/Films.css' //для Films.tsx и Allfims.tsx
 import Button from "./Button"
 
 interface Movie {

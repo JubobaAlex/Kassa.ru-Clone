@@ -6,10 +6,18 @@
     border-radius: 10px;
     cursor: pointer;
     color: #5a500e;
+    background-size: 200% auto;
+    background-position: left center;
 }
 
 .btn-div {
     display: flex;
     justify-content: center;
-    
+}
+
+.btn:hover {
+    animation-name:btn;
+    animation-duration: 0.4s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
 }

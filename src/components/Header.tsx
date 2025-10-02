@@ -1,5 +1,5 @@
 import './style/Header.css'
-import'./style/AnimationHeader.css'
+import './style/animation/AnimationHeader.css'
 export default function Header() {
     return (
         <div>
