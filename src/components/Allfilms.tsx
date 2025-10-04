@@ -22,7 +22,7 @@ export default function Allfilms() {
 
   async function fetchFilms() {
     try {
-      const result = await axios.get('./data/date.json')
+      const result = await axios.get('./data/films.json')
       setMovies(result.data.movies)
     }
     catch(err) {

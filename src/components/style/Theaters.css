@@ -1,0 +1,17 @@
+
+.theaters-main {
+    border: 1px solid #eee;
+    padding: 1em;
+    margin: 1em;
+    display: flex;
+
+    width: 420px;
+}
+
+.point {
+    cursor: pointer;
+}
+
+.point:hover {
+    text-decoration:underline;
+}

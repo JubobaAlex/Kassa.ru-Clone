@@ -4,7 +4,7 @@ import './style/Films.css'
 import Button from "./Button"
 
 
-interface Movie {
+interface IMovie {
   id: number
   title: string
   original_title: string
@@ -16,7 +16,7 @@ interface Movie {
 }
 
 export default function Films() {
-  const [movies, setMovies] = useState<Movie[]>([])
+  const [movies, setMovies] = useState<IMovie[]>([])
   const [error, setError] = useState<string | null>(null)
   useEffect(() => {
     fetchFilms()
@@ -24,7 +24,7 @@ export default function Films() {
 
   async function fetchFilms() {
     try {
-      const result = await axios.get('./data/date.json')
+      const result = await axios.get('./data/films.json')
       setMovies(result.data.movies)
     }
     catch(err) {
