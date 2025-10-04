@@ -1,24 +1,25 @@
 import Header from './components/Header'
-import { BrowserRouter } from 'react-router'
-import { Route, Routes } from 'react-router'
 import Home from './pages/Home'
 import Cinema from './pages/Сinema'
 import './App.css'
 import List from './pages/List'
+import Footer from './components/Footer'
+import { Route , Routes, BrowserRouter } from 'react-router'
 function App() {
   return (
-    <div>
-      <div className='components-div'>
-          <Header />
+    <BrowserRouter>
+      <div className='app'>
+        <Header />
+        <div className='main-content'>
+          <Routes>
+            <Route index path='/' element={<Home />}/>
+            <Route path='/cinemas' element={<Cinema />} />
+            <Route path='/list' element={<List />} />
+          </Routes>
+        </div>
+        <Footer />
       </div>
-      <BrowserRouter>
-        <Routes>
-          <Route index path='/' element={<Home />}/>
-          <Route path='/cinemas' element={<Cinema />} />
-          <Route path='/list' element={<List />} />
-        </Routes>
-      </BrowserRouter>
-    </div>
+    </BrowserRouter>
   )
 }
 

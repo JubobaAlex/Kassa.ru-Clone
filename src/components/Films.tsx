@@ -1,7 +1,8 @@
 import axios from "axios"
 import { useEffect, useState } from "react"
-import './style/Films.css' //для Films.tsx и Allfims.tsx
+import './style/Films.css' 
 import Button from "./Button"
+
 
 interface Movie {
   id: number
@@ -17,7 +18,6 @@ interface Movie {
 export default function Films() {
   const [movies, setMovies] = useState<Movie[]>([])
   const [error, setError] = useState<string | null>(null)
-
   useEffect(() => {
     fetchFilms()
   }, [])
@@ -36,7 +36,6 @@ export default function Films() {
   if (error) {
     return <div>Ошибка: {error}</div>
   }
-
   return (
     <div className="films-container">
       <h2>Сейчас в кино</h2>
@@ -65,6 +64,8 @@ export default function Films() {
           ))}
         </div>
       )}
+
     </div>
   )
 }
+ 

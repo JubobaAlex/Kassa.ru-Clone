@@ -1,5 +1,6 @@
 import Button from "./Button"
-import './style/Films.css' //для Films.tsx и Allfims.tsx
+
+import './style/Allfilms.css'
 import axios from "axios"
 import { useEffect, useState } from "react"
 export default function Allfilms() {
@@ -35,7 +36,7 @@ export default function Allfilms() {
   }
 
     return (
-        <div>
+        <main>
           {movies.length === 0 ? (
             <div>Нет данных о фильмах</div>
           ): (
@@ -58,6 +59,6 @@ export default function Allfilms() {
             </div>
           )
           }
-        </div>
+        </main>
     )
 }

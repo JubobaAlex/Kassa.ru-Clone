@@ -1,0 +1,143 @@
+/* Общие стили для обоих компонентов */
+.films-container {
+  padding: 20px;
+}
+
+.allfilms-container {
+  min-height: calc(100vh - 120px);
+  padding: 20px 0;
+}
+
+.allfilms-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.allfilms-content h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.no-data {
+  text-align: center;
+  font-size: 18px;
+  color: #666;
+  padding: 50px 0;
+}
+
+/* Горизонтальный список для Films.tsx */
+.movies-horizontal-list {
+  justify-content: center;
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.movie-card-horizontal {
+  min-width: 200px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Вертикальный список для Allfilms.tsx */
+.movies-vertical-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.movie-card-vertical {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+  gap: 20px;
+}
+
+.movie-info-full {
+  flex: 1;
+}
+
+.movie-card-vertical .button-container {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+/* Общие стили для карточек фильмов */
+.movie-poster {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.movie-info {
+  padding: 12px;
+}
+
+.movie-title {
+  font-size: 18px;
+  margin: 0 0 8px 0;
+  font-weight: bold;
+  color: #333;
+}
+
+.movie-original-title {
+  font-size: 14px;
+  color: #666;
+  margin: 0 0 12px 0;
+  font-style: italic;
+}
+
+.movie-synopsis {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0 0 12px 0;
+}
+
+.movie-details {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.age-rating {
+  background: #f0f0f0;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.duration {
+  font-size: 14px;
+  color: #666;
+}
+
+.movie-genres {
+  font-size: 14px;
+  color: #666;
+  margin: 0 0 8px 0;
+}
+
+.movie-production {
+  font-size: 13px;
+  color: #888;
+  margin: 0;
+  font-style: italic;
+}
