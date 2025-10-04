@@ -30,7 +30,7 @@
   background: white;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  overflow: hidden;
+
 }
 
 .movie-poster {
@@ -85,4 +85,34 @@
    padding-top: 5px;
    font-size: 12px;
    color: #666;
+}
+
+@media (max-width: 375px),(max-width:414px),(max-width:390px), (max-width:430px), (max-width:412px), (max-width:360px){
+  .films-container {
+    padding: 15px 10px;
+  }
+  
+  .movies-horizontal-list {
+    display: flex;
+    flex-direction: column; /* Вертикально */
+    gap: 20px;
+    overflow-x: visible;
+  }
+  
+  .movie-card-horizontal {
+    min-width: auto !important;
+    width: 100%;
+    display: flex; /* Карточка в ряд */
+  }
+  
+  .movie-poster {
+    width: 120px;
+    height: 160px;
+    flex-shrink: 0;
+  }
+  
+  .movie-info {
+    flex: 1;
+    padding: 10px;
+  }
 }

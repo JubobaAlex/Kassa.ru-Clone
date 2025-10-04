@@ -11,8 +11,8 @@ export default function Header() {
                         <h3><a href='/cinemas'>Кинотеатры</a></h3>
                     </nav>
                     <div className='login'>
-                        <h3><a href="">Вход</a></h3>
-                        <h3><a href="">Регистрация</a></h3>
+                        <h3><a href="#">Вход</a></h3>
+                        <h3><a href="#">Регистрация</a></h3>
                     </div>
                 </div>
             </header>

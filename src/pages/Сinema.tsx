@@ -1,4 +1,4 @@
-import Theaters from "../components/theaters";
+import Theaters from "../components/Theaters";
 
 export default function Cinema() {
     return(
